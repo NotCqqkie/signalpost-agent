@@ -1,0 +1,11 @@
+# 100-company smoke test (clean clone of 09fae77, fresh venv, declared install step only)
+
+uv sync --frozen
+uv run python scripts/run_competition_batch.py --organisations smoke/smoke-companies.jsonl --output out/envelopes.jsonl --viewer out/viewer.html
+
+Result: exit 0 wall_s 218
+uv 0.12.23 (46b84fd0b 2026-10-03 x86_64-pc-windows-msvc)
+Using CPython 3.12.4 interpreter at: C:\Python312\python.exe
+sync exit 0
+Python 3.12.4
+uv run python scripts/run_competition_batch.py --organisations /c/Users/303da/pc/signalpost/eval/dev-A.jsonl --output /c/Users/303da/pc/signalpost/runs/smoke-m2w/envelopes.jsonl --report /c/Users/303da/pc/signalpost/runs/smoke-m2w/report.json --run-id smoke-m2w --viewer /c/Users/303da/pc/signalpost/runs/smoke-m2w/viewer.html

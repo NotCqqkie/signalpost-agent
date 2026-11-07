@@ -1,0 +1,131 @@
+{
+  "run_id": "smoke-m2w",
+  "agent_version": "signalpost-agent/1.0",
+  "started_at": "2026-11-07T03:46:02.462071Z",
+  "completed_at": "2026-11-07T03:49:29.328683Z",
+  "input_count": 100,
+  "input_problems": [],
+  "emitted_envelopes": 100,
+  "validation": {
+    "one_envelope_per_input": true,
+    "all_terminal": true,
+    "passed": true
+  },
+  "states": {
+    "completed": 100
+  },
+  "available_claims_by_family": {
+    "registry": 1015,
+    "financials": 1851,
+    "roles": 426,
+    "dated_activity": 695,
+    "workplaces": 81,
+    "group": 4,
+    "website": 11,
+    "brand": 17,
+    "social_profiles": 13,
+    "ratings_reviews": 2
+  },
+  "company_runtime_ms": {
+    "p50": 7890,
+    "p95": 47530,
+    "max": 117360
+  },
+  "registry": {
+    "bulk": null
+  },
+  "operations": {
+    "requests": 329,
+    "bytes": 38955777,
+    "hosts": 93,
+    "max_requests_per_host": 17,
+    "tls_aia": {
+      "hosts_tried": 0,
+      "hosts_repaired": 0,
+      "issuer_downloads": 0
+    },
+    "third_party_cost_usd": 0,
+    "wall_seconds": 206.9
+  },
+  "nav": {
+    "state": "complete",
+    "pages": 218,
+    "ads_seen": 57678,
+    "active_ads": 9621,
+    "employers": 5894,
+    "since": "2026-07-10T03:46:03.741895+00:00",
+    "build_seconds": 205.9
+  },
+  "ted": {
+    "state": "complete",
+    "batches": 2,
+    "failed_batches": 0,
+    "requests": 2,
+    "companies_with_awards": 1,
+    "seconds": 1.9,
+    "request_log": [
+      {
+        "batch": 0,
+        "page": 1,
+        "status": 200,
+        "error": null,
+        "sha256": "4392cb2130efe494f4bca8f6967874500e6242fa87227fa0bcb8504a0bfb6737"
+      },
+      {
+        "batch": 1,
+        "page": 1,
+        "status": 200,
+        "error": null,
+        "sha256": "b96891bfba149cab2753c78ac771b260e3180a2c3818789ebbb4f60fec54ea4e"
+      }
+    ]
+  },
+  "official_signals": {
+    "smilefjes": {
+      "state": "complete",
+      "mode": "csv",
+      "organisations": 8000,
+      "sha256": "cf73422b45c3eca25da33edab210e7435698dd4ebb0a656ebdd5ff7cffe7e7cc",
+      "retrieved_at": "2026-11-07T03:46:06.114154Z",
+      "seconds": 3.6,
+      "fetch": {
+        "requests": 2,
+        "bytes": 15836330,
+        "hosts": 1,
+        "max_requests_per_host": 2
+      }
+    },
+    "state_aid": {
+      "states": {
+        "checked": 100
+      },
+      "fetch": {
+        "requests": 103,
+        "bytes": 103665,
+        "hosts": 1,
+        "max_requests_per_host": 103
+      }
+    },
+    "fin_licences": {
+      "states": {
+        "checked": 100
+      },
+      "fetch": {
+        "requests": 101,
+        "bytes": 5600,
+        "hosts": 1,
+        "max_requests_per_host": 101
+      }
+    }
+  },
+  "nav_fetch": {
+    "requests": 219,
+    "bytes": 106535735,
+    "hosts": 1,
+    "max_requests_per_host": 219
+  },
+  "timed_out_companies": [],
+  "time_budget_seconds": 5400.0,
+  "modules": "registry_live,financials,roles,group,locations,website,hiring",
+  "strategies": "name_guess,email_domain,no_domain_legal_name,crawl,nav,nav_homepage,nav_containment,brreg_events,ted,cc_domains,site_hiring,site_news,social_plus,follow_redirects,state_aid,smilefjes,fin_licences,www_swap,tls_aia"
+}
